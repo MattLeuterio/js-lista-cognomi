@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* utility */
+
+.u_flex {
+    display: flex;
+}
+
+.u_flexColumn {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.u_show {
+    display: block;
+}
+
+.u_hidden {
+    display: none;
+}
+
+/* APP */
+
+.app {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+header, 
+main,
+.list,
+#pos-visibility {
+    text-align: center;
+    margin-top: 40px;
+}
+
