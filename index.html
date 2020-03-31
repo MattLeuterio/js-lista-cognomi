@@ -8,26 +8,25 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- Google Font stylesheet -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
     
-    <div class="app">
-        <header>
-            <h1>JOIN US</h1>
-        </header>
-    
+    <div class="app u-flexColumn">
+        
         <main>
     
             <!-- INPUT -->
-            <section class="input">
-                <input type="text" id="surnameInput" placeholder="Inserisci il tuo cognome">
-                <button id="btnAdd">JOIN US</button>
+            <section class="input u_flexColumn u_pRelative">
+                <input type="text" id="surnameInput" placeholder="Write your surname">
+                <div class="search_logo u_pAbsolute"><i class="fas fa-search"></i></div>
             </section>
     
             <!-- LIST -->
-            <section class="list u_show">
+            <section class="list">
                 <div class="list__title">
-                    <h2>Title List</h2>
+                    <h2>People</h2>
                 </div>
                 <div class="list__abc">
                     <ul id="list-container">
@@ -35,11 +34,17 @@
                     </ul>
                 </div>
                 <div id="pos-visibility" class="u_hidden">
-                    <h3 class="hidden">Your position in List: <span id="position"></span></h3>
+                    <span id="position"></span><span class="position-txt">position in list</span>  
                 </div>
             </section>
+
+            <!-- Button Section -->
+            <div class="btn__section">
+                <button class="btn" id="btnAdd"><i class="fas fa-plus"></i> <span>Add your Surname</span></button>
+            </div>
             
         </main>
+
     </div>
     
 
